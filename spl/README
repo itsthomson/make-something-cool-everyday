@@ -11,7 +11,8 @@ It's definitely one of the more esoteric programming languages that I
 thought was cool, so I've decided to write a program in SPL for today's
 Make Something Cool Everyday challenge.
 
-This program will output the string "Make Something Cool Everyday!".
+This program will prompt the user to input a number. The program will then
+output the string "MSCE!" that number of times.
 
 How it works:
 The title of every play serves as a comment, delimited by the beginning of
