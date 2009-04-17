@@ -1,63 +1,9 @@
 ----------------------------
-Make Something Cool Everyday 
-17 April 2009
+Make Something Cool Everyday
 Thomson Nguyen
 ----------------------------
 
-Purpose:
-This poorly written play is in fact a program written in the Shakespearean Programming Language (SPL), written by Kalle Hasselström and Jon Åslund. It's definitely one of the more esoteric programming languages that I thought was cool, so I've decided to write a program in SPL for today's Make Something Cool Everyday challenge.
+This repository is a collection of programs I've written for the Make
+Something Cool Everyday Challenge.
 
-This program will output the string "Make Something Cool Everyday!".
-
-How it works:
-The title of every play serves as a comment, delimited by the beginning of the file and the first period. All characters listed in the Dramatis Personae are variables to be assigned an signed int value. All characters must have a signed int assignment by the end of your play, or the program will not compile. You must also use an actual name used in a Shakespearean play, or the program will not compile (e.g. Mercutio, Hamlet, Iago will work; Thomson, Jimbo, and Francis Bacon will not.)
-
-Acts and scenes serve as GOTO markers, but since this is a simple string output program, they simply divide the program into smaller parts. 
-
-Here's a quick explanation of how SPL works, using a code snippet from the SPL documentation:
-
---
-[Enter Hamlet and Iago]
-Hamlet:
- You lying stupid fatherless big smelly half-witted coward!
-
- You are as stupid as the difference between a handsome rich brave hero and thyself!
- 
- Speak your mind!
---
-
-In the example above, we are assigning a signed integer value to the variable Iago. It doesn't matter who's saying it, only that Iago is being addressed (this means in most cases, only two people should be in the same room). Let's break that first sentence down:
-
-	`You':
-	Second person pronoun (variable assignment)
-
-	`...coward': 
-	This is a noun. All nouns are assigned a value of 1 or -1, depending
-	on whether it's `nice' or not. Coward's not nice at all, so it gets
-	-1. Neutral nouns like trees, houses, castles get +1. 
-
-	`...lying stupid fatherless big smelly half-witted...':
-	These are all adjectives, and there are six of them. Much like how
-	adjectives modify nouns, each adjective multiplies the value of the
-	noun it precedes by 2. So we have (2(2(2(2(2(2(-1)))))))= 64,
-	meaning that Iago now has a value of -64.
-
-Here's the second sentence:
-
-	`You':
-	Second person pronoun (variable assignment)
- 
-	'...are as stupid as the difference between a...':
-	Take the difference of the next two arguments.
-	
-	`...handsome rich brave hero...':
-	Hero gets +1. Handsome, rich, and brave are three adjectives, so our first argugment is 8.
-	
-	`...thyself!':
-	Reflexive pronoun--recall Iago has a value of -64, so what we're 
-	really doing is taking the difference 8-(-64), and assigning it back 
-	to Iago. Iago now has a value of 72.
-	
-The last sentence, ``Speak your mind!'' causes the character being spoken to (Iago) to output his or her corresponding character in the user's default character set. This means in ASCII, the third line would print out a lowercase `h'. This was just a small example and so for a more in-depth explanation, refer to the SPL documentation. 
-
-As far as I know, there exists no actual compiler for SPL, only a SPL -> C translator that serves as both a lexical analyzer and language parser. The translator can be found at http://shakespearelang.sourceforge.net.
+All of this is subject to the MIT License.
