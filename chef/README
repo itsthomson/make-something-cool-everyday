@@ -1,0 +1,20 @@
+----------------------------
+Make Something Cool Everyday
+primes.chef
+18 April 2009
+Thomson Nguyen
+----------------------------
+
+Purpose:
+This program will prompt the user to input a positive number. The program will then find all primes strictly less than that number and print them out. 
+
+This program was written in Chef, yet another esoteric programming language written by David Morgan-Mar. Chef has three design principles:
+	
+	- Program recipes should not only generate output, but they should 
+	be easy to prepare and delicious.
+	- Recipes may appeal to cooks with different budgets.
+	- Recipes will be metric, but may use traditional cooking measures 
+	such as cups and tablespoons.
+
+More information on Chef can be found at
+http://www.dangermouse.net/esoteric/chef.html
